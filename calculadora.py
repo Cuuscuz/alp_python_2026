@@ -10,7 +10,7 @@ print("""
 
 #Primeiro defino a variavél oper para determinar a operação:
 
-oper = int(input("Já se decidiu? Digite a operação desejada: "))
+oper = float(input("Já se decidiu? Digite a operação desejada: "))
 
 #Caso o valor da variavél estiver dentros dos quatro números ela passará pelo if seguinte, porém se não
 #estiver ele encerra imediatamente o progama.
