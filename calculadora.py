@@ -1,3 +1,4 @@
+
 print("""
       Olá, bem vindo à calculadora de 4 operações!!
       Escolha a desejada:
@@ -7,10 +8,18 @@ print("""
       4. Multiplicação.
       """)
 
+#Primeiro defino a variavél oper para determinar a operação:
+
 oper = int(input("Já se decidiu? Digite a operação desejada: "))
+
+#Caso o valor da variavél estiver dentros dos quatro números ela passará pelo if seguinte, porém se não
+#estiver ele encerra imediatamente o progama.
 
 if oper < 1 or oper > 4:
     print("Infelizmente essa não é uma opção válida...\nTente novamente!")
+
+#Perceba que o progama de operações esta totalmente dentro do else, pois ele é a segundo condição
+#caso esteja dentro das condições, então é rodado como uma condição só.
 
 else:
     print("Ok, diga-me os números.")
@@ -32,4 +41,3 @@ else:
     elif oper == 4:
         mult = num1 * num2
         print(f"O resultado da multiplicação é {mult}")
-        
