@@ -14,5 +14,6 @@ while tent != 0:
             senha = int(input("Digite novamente sua senha: "))
 
         else:
+            tent -= 1
             print("Sua senha foi bloqueada! Vá até alguma agência para desbloquear.")
-            break
+            
