@@ -1,24 +1,28 @@
 from random import randint
 
-numero_sorteado = randint(1, 10)
-tentativas = 0
+num_sort = randint(1,10)
+tent = 0
 
-while tentativas < 3:
+while tent != 3:
+    num = int(input("Escolha um número de 1 à 10: "))
 
-    jogador = int(input("Digite um número de 1 a 10: "))
-    tentativas += 1
+    if num < num_sort:
+        tent += 1
+        if tent == 3: 
+            break
+        else:
+            print("Você errou, tente um número maior!")
 
-    if jogador == numero_sorteado:
+    elif num > num_sort:
+        tent += 1
+        if tent == 3:
+            break
+        else:
+            print("Você errou, tente um número menor!")
+
+    else:
         print("Parabéns, você acertou!")
         break
 
-    elif jogador > numero_sorteado:
-        print("Você errou!")
-        print("Tente um número menor")
-
-    else:
-        print("Você errou!")
-        print("Tente um número maior")
-
-if jogador != numero_sorteado:
-    print("Você perdeu! Fim de jogo.")
+if tent == 3:
+    print("Errou novamente! Limite de tentativas encerrados")
