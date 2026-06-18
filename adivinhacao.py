@@ -20,4 +20,4 @@ while tent != 3 and not acerto:
         print("Você errou, tente um número maior!")
 
 if tent == 3:
-    print("Você já tenou 3 vezes, programa encerrado!!")
+    print("Burro dms, programa encerrado!!")
