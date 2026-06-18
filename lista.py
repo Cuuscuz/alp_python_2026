@@ -8,9 +8,4 @@ produto = [nome, preco, estoque, promo]
 print(f"Nome......:{produto[0]}")
 print(f"Preço.....:{produto[1]}")
 print(f"Estoque...:{produto[2]}")
-
-if produto[3] == True:
-    print("Promoção..:Sim")
-
-else:
-    print("Promoção..:Não")
+print(f"Promoção..:{"Sim" if produto[3] else "Não"}")
